@@ -6,11 +6,11 @@ import { Menu, X } from 'lucide-react'
 const menuItems = [
   {
     name: 'Home',
-    href: '#',
+    href: '/',
   },
   {
     name: 'About',
-    href: '#',
+    href: '/Trial',
   },
   {
     name: 'Contact',
@@ -26,7 +26,7 @@ export default function ExampleNavbarOne() {
   }
 
   return (
-    <div className="fixed top-0 z-50 w-full bg-white mt-5">
+    <div className="fixed top-0 z-50 w-full bg-white pt-5">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-2 sm:px-6 lg:px-8">
         <div className="inline-flex items-center space-x-2">
           <span>
@@ -43,7 +43,7 @@ export default function ExampleNavbarOne() {
               />
             </svg>
           </span>
-          <span className="font-bold">DevUI</span>
+          <span className="font-bold text-lg">ZenithZest</span>
         </div>
         <div className="hidden lg:block">
           <ul className="inline-flex space-x-8">
