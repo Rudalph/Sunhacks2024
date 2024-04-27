@@ -15,8 +15,12 @@ const menuItems = [
     href: '/Trial',
   },
   {
-    name: 'Contact',
-    href: '#',
+    name: 'Goals',
+    href: '/Fetch',
+  },
+  {
+    name: 'Chat',
+    href: '/Chat',
   },
 ]
 
