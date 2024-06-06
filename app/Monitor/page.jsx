@@ -1,7 +1,7 @@
 "use client"
 import React, { useState, useEffect } from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, BarChart, Bar} from 'recharts';
-import firestore from '@/components/firebase'; // Assuming the correct path to firebase.js
+import firestore from '@/Components/firebase'; // Assuming the correct path to firebase.js
 import { collection, addDoc, serverTimestamp, getDocs } from "firebase/firestore"; 
 
 const Page = () => {
