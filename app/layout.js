@@ -1,6 +1,6 @@
 import { Inter, Montserrat, Roboto } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/Components/Navbar"
+import Navbar from "@/components/Navbar"
 
 
 const inter = Montserrat({ subsets: ["latin"], weight:['100','200','300','400','500','600','700','800','900']});
