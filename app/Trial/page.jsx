@@ -7,6 +7,7 @@ import { AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, 
 import { collection, addDoc, serverTimestamp } from "firebase/firestore";
 import db from '@/Components/firebase';
 import axios from 'axios'; // Import Axios
+import { BsFillClipboardDataFill } from "react-icons/bs";
 
 const formatRecommendations = (recomendations) => {
   return recomendations.split('\n\n').map((section, index) => {
@@ -30,7 +31,7 @@ const formatRecommendations = (recomendations) => {
 };
 
 const Page = () => {
-  const [recomendation, setRecomendation]=useState('')
+  const [recomendation, setRecomendation] = useState('')
   useEffect(() => {
     console.log("Recommendations:", recomendation);
   }, [recomendation]);
@@ -109,7 +110,7 @@ const Page = () => {
         Muscle_Mass: formData.muscle_mass,
       };
 
-      const response = await fetch('http://localhost:5000/', {
+      const response = await fetch('https://score-calculation-api-sunhacks.onrender.com/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -126,7 +127,7 @@ const Page = () => {
 
     try {
       const { health_score, weightGoal, targetWeight, fitnessGoals, healthImprovements } = formData;
-  
+
       const dataToSend = {
         health_score,
         weightGoal,
@@ -134,12 +135,12 @@ const Page = () => {
         fitnessGoals,
         healthImprovements
       };
-  
+
       // Use axios.post instead of fetch
-      const response = await axios.post('http://localhost:5002/', dataToSend);
+      const response = await axios.post('https://recomendations-gemeni-api-sunhacks.onrender.com/', dataToSend);
       const data = response.data;
       console.log(data.recommendations); // Log the recommendations received from Flask
-       setRecomendation(formatRecommendations(data.recommendations));
+      setRecomendation(formatRecommendations(data.recommendations));
     } catch (error) {
       console.error("Error:", error);
     }
@@ -185,6 +186,25 @@ const Page = () => {
 
   return (
     <div>
+      <div className='fixed bottom-0 left-0 z-50'>
+        <div className="drawer">
+          <input id="my-drawer" type="checkbox" className="drawer-toggle" />
+          <div className="drawer-content">
+            {/* Page content here */}
+            <label htmlFor="my-drawer" className="btn drawer-button bg-transparent shadow-none"><BsFillClipboardDataFill size={20} className='text-[#10847E]' /></label>
+          </div>
+          <div className="drawer-side">
+            <label htmlFor="my-drawer" aria-label="close sidebar" className="drawer-overlay"></label>
+            <ul className="menu p-4 w-80 min-h-full bg-base-200 text-base-content">
+              <li><a><strong className='p-3'>1.  0 to 20 Poor Health</strong></a></li>
+              <li><a><strong className='p-3'>2.  21 to 40 Fair Health</strong></a></li>
+              <li><a><strong className='p-3'>3.  41 to 60 Good Health</strong></a></li>
+              <li><a><strong className='p-3'>4.  61 to 80 Very Good Health</strong></a></li>
+              <li><a><strong className='p-3'>5.  81 to 100 Excllent Health</strong></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
       <div className='mt-40 flex justify-evenly'>
         <div className="card card-compact w-96 bg-base-100 shadow-xl ml-5 rounded-sm">
           <div className="card-body m-5">

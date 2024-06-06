@@ -29,40 +29,36 @@ export default function FeatureThree() {
                         <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-[#DEF8ED]">
                             <FaTablets className="h-9 w-9 text-gray-700" />
                         </div>
-                        <h3 className="mt-8 text-lg font-semibold text-black">Find Alternate Medecine</h3>
+                        <h3 className="mt-8 text-lg font-semibold text-black">Personalized Recommendations</h3>
                         <p className="mt-4 text-sm text-gray-600">
-                            Swasthya Connect will get connected to your prescription and your medical prescription and by analyzing
-                            it will provide you the list of other brand names having same content with different prices 
+                        Tailored just for you, our website offers personalized recommendations based on your preferences and browsing history, ensuring a curated experience that matches your unique interests. 
                         </p>
                     </div>
                     <div>
                         <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-[#DEF8ED]">
                             <BsFileEarmarkMedicalFill className="h-9 w-9 text-gray-700" />
                         </div>
-                        <h3 className="mt-8 text-lg font-semibold text-black">Simplify Your Report</h3>
+                        <h3 className="mt-8 text-lg font-semibold text-black">Live Monitoring System</h3>
                         <p className="mt-4 text-sm text-gray-600">
-                            Our AI powered medical report simplifier will generate a summary of your report and will let you know what are
-                            plus points and minus points in your report also will reccomend you to overcome minus points. Also you can chat with your report.
+                        Stay informed about your health in real-time with our advanced live monitoring system, providing continuous updates and insights for proactive wellness management.
                         </p>
                     </div>
                     <div>
                         <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-[#DEF8ED]">
                             <GoLaw className="h-9 w-9 text-gray-700" />
                         </div>
-                        <h3 className="mt-8 text-lg font-semibold text-black">Know your medical rights</h3>
+                        <h3 className="mt-8 text-lg font-semibold text-black">Personalized Goal Setting and Health Score</h3>
                         <p className="mt-4 text-sm text-gray-600">
-                            We have a chat bot trained on IPC, CPC, CrPC, Constitutions of India and various other healthcare specific acts and regulations
-                            which will help one to know what one can do if they are cheated in healthcare domain.
+                        Set achievable health goals tailored to your lifestyle and track your progress with our intuitive platform. Monitor your health score and receive actionable insights to optimize your well-being.
                         </p>
                     </div>
                     <div>
                         <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-[#DEF8ED]">
                             <MdBloodtype className="h-9 w-9 text-gray-700" />
                         </div>
-                        <h3 className="mt-8 text-lg font-semibold text-black">Find right donar for yourself</h3>
+                        <h3 className="mt-8 text-lg font-semibold text-black">Health-Optimized Chatbot</h3>
                         <p className="mt-4 text-sm text-gray-600">
-                            Swasthya Connect provides a service where desired donars can regiter themselves and in case of any user needs a particular type
-                            of Blood group he/she will get a larger pratform to searh for right donars at right time. 
+                        Our specialized chatbot is trained to provide personalized fitness guidance, nutritional advice, sleep optimization tips, and stress management techniques, ensuring comprehensive support for your well-being journey.
                         </p>
                     </div>
                 </div>

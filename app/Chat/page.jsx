@@ -15,11 +15,12 @@ const Page = () => {
 
   const handleQuestionChange = (e) => {
     setQuestion(e.target.value);
+    console.log("...")
   };
 
   const handleSubmit = async () => {
     try {
-      const response = await fetch('http://127.0.0.1:5003/ask', {
+      const response = await fetch('https://chat-bot-api-sunhacks.onrender.com/ask', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
