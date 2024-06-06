@@ -1,10 +1,10 @@
 import Image from "next/image";
-import Carousle from "@/components/Carousle"
-import Access from "@/components/Access"
-import Imgcards from "@/components/Imgcards"
-import Features from "@/components/Features"
-import Faqs from "@/components/Faqs"
-import Footer from "@/components/Footer"
+import Carousle from "@/Components/Carousle"
+import Access from "@/Components/Access"
+import Imgcards from "@/Components/Imgcards"
+import Features from "@/Components/Features"
+import Faqs from "@/Components/Faqs"
+import Footer from "@/Components/Footer"
 export default function Home() {
   return (
     <div>
